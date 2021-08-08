@@ -15,3 +15,8 @@ Fluxo de responsabilidades que determina qual lógica/regra será aplicada. Padr
 
 Template Method:
 Favorece o reaproveitamento de códigos comuns entre classes, evitando assim duplicações de códigos. Um método numa classe mãe funcionando como um modelo, onde o método faz parte do processo (a parte em comum) e delega o resto às classes filhas. Ler mais em: https://refactoring.guru/design-patterns/template-method
+
+==============================================================================================================
+
+State:
+Parecido com o "Strategy", representa um estado. Utilizado quando existe transição de estados ou quando é necessário aplicar alguma regra de negócio ou algoritmo baseado no ESTADO de um objeto/classe. Reduz a quantidade de if's no código.
