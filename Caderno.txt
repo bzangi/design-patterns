@@ -1,0 +1,17 @@
+Padrões de projeto são utilizados para solucionar problemas comuns e recorrentes.
+
+Strategy:
+Algoritmo que varia com determinado parâmetro ou tipo de informação e necessita de diversos if/else.
+No strategy, o parâmetro pode ser implementado como uma classe e, através de polimorfismo ou classes abstratas, podemos implementar sua própria estratégia de cálculo.
+	Classes com mesmo método podem implementar uma interface.
+Este padrão pode ser utilizado quando há diversos possíveis algoritmos para uma ação (como calcular imposto, por exemplo). Nele, nós separamos cada um dos possíveis algoritmos em classes separadas.
+
+==============================================================================================================
+
+Chain of Responsibility:
+Fluxo de responsabilidades que determina qual lógica/regra será aplicada. Padrão usado quando existem diversas regras, mas não se sabe qual delas deverá ser aplicada. A regra que não for aplicada deverá chamar a próxima regra.
+
+==============================================================================================================
+
+Template Method:
+Favorece o reaproveitamento de códigos comuns entre classes, evitando assim duplicações de códigos. Um método numa classe mãe funcionando como um modelo, onde o método faz parte do processo (a parte em comum) e delega o resto às classes filhas. Ler mais em: https://refactoring.guru/design-patterns/template-method
